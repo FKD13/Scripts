@@ -1,0 +1,6 @@
+#!/bin/bash
+A=$( amixer sget Master | grep 'Left.*\[' | sed 's/^[^\[]*\[//' | sed 's/%\].*$//')
+if (( $A < 100 ))
+then
+ 	pactl set-sink-volume 0 +10%
+fi

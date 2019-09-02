@@ -1,0 +1,7 @@
+#!/bin/bash
+if [[ "$(xbacklight | sed 's/\..*//')" -lt 10 ]]
+then
+	xbacklight - 2%
+else
+	xbacklight - 10%
+fi

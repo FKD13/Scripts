@@ -1,0 +1,3 @@
+TEXT="$@"
+curl 10.0.5.42:8000 -X POST --header "X-Messages:$(echo -n "$TEXT" | base64)"
+exit 0

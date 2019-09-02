@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo systemctl stop wpa_supplicant@wlp2s0.service
+sleep 1
+sudo systemctl start wpa_supplicant@wlp2s0.service

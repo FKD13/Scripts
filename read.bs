@@ -1,0 +1,6 @@
+#!/bin/bash
+echo -e ">> \c"
+read zin
+echo $zin
+
+# use ${namevar:beginpos:endpos} to substring

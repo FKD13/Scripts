@@ -1,0 +1,2 @@
+TEXT="$@"
+curl 'https://kelder.zeus.ugent.be/messages/' -H 'Content-Type: text/plain' -H 'X-Username: ||><||' --data-binary "$TEXT" --compressed

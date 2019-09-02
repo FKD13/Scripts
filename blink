@@ -1,0 +1,12 @@
+#!/bin/bash
+for ((c=1; c<=$1; c++))
+do
+	while (( $(xbacklight | sed 's/\..*$//') > 0 ))
+	do
+		xbacklight - 25%
+	done
+	while (($(xbacklight | sed 's/\..*$//') < 100))
+	do
+		xbacklight + 25%
+	done
+done
